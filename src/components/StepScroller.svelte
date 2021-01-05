@@ -65,7 +65,9 @@
     {#each stepScrollerIntro as { text }, i}
       <div class="step-trigger-wrapper {sceneName}-trigger" id="step-{i + 1}">
         {#if text && text !== 'no text'}
-          <div class="step-trigger-box">{text}</div>
+          <div class="step-trigger-box">
+            {@html text}
+          </div>
         {/if}
       </div>
     {/each}
